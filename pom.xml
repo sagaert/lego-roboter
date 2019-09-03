@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.salex.raspberry.roboter</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>salex.org Roboter Control Center</name>
+	<packaging>pom</packaging>
+
+	<!-- Projektkontext -->
+	<organization>
+		<name>salex.org</name>
+		<url>http://www.salex.org</url>
+	</organization>
+	<developers>
+		<developer>
+			<id>sascha</id>
+			<name>Sascha Gärtner</name>
+			<email>sascha.gaertner@salex.org</email>
+			<organization>salex.org</organization>
+			<organizationUrl>http://www.salex.org</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>Europe/Paris</timezone>
+		</developer>
+	</developers>
+	
+	<!-- Festlegung der Versionen -->
+	<properties>
+		<robocc.version>${project.version}</robocc.version>
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+	</properties>
+
+	<modules>
+		<module>interface</module>
+		<module>agent</module>
+		<module>core</module>
+	</modules>
+		
+</project>
